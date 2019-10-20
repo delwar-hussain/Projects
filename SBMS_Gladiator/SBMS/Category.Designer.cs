@@ -40,64 +40,73 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 42);
+            this.label1.Location = new System.Drawing.Point(80, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 25);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Code";
             // 
             // categoryCodeTextBox
             // 
-            this.categoryCodeTextBox.Location = new System.Drawing.Point(268, 42);
+            this.categoryCodeTextBox.Location = new System.Drawing.Point(134, 22);
+            this.categoryCodeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoryCodeTextBox.Name = "categoryCodeTextBox";
-            this.categoryCodeTextBox.Size = new System.Drawing.Size(202, 31);
+            this.categoryCodeTextBox.Size = new System.Drawing.Size(247, 20);
             this.categoryCodeTextBox.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 95);
+            this.label2.Location = new System.Drawing.Point(80, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 25);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
             // categoryNameTextBox
             // 
-            this.categoryNameTextBox.Location = new System.Drawing.Point(268, 95);
+            this.categoryNameTextBox.Location = new System.Drawing.Point(134, 49);
+            this.categoryNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoryNameTextBox.Name = "categoryNameTextBox";
-            this.categoryNameTextBox.Size = new System.Drawing.Size(202, 31);
+            this.categoryNameTextBox.Size = new System.Drawing.Size(247, 20);
             this.categoryNameTextBox.TabIndex = 1;
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(348, 148);
+            this.saveButton.Location = new System.Drawing.Point(174, 77);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(122, 41);
+            this.saveButton.Size = new System.Drawing.Size(61, 21);
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // categoryGridView
             // 
             this.categoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryGridView.Location = new System.Drawing.Point(38, 247);
+            this.categoryGridView.Location = new System.Drawing.Point(19, 128);
+            this.categoryGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoryGridView.Name = "categoryGridView";
             this.categoryGridView.RowTemplate.Height = 33;
-            this.categoryGridView.Size = new System.Drawing.Size(599, 150);
+            this.categoryGridView.Size = new System.Drawing.Size(511, 169);
             this.categoryGridView.TabIndex = 3;
+            this.categoryGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.categoryGridView_CellContentClick);
             // 
             // Category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 450);
+            this.ClientSize = new System.Drawing.Size(541, 308);
             this.Controls.Add(this.categoryGridView);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.categoryNameTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.categoryCodeTextBox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Category";
             this.Text = "Category";
             ((System.ComponentModel.ISupportInitialize)(this.categoryGridView)).EndInit();
