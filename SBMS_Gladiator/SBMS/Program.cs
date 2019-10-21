@@ -16,7 +16,7 @@ namespace SBMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Supplier());
+            Application.Run(new Customer());
         }
     }
 }

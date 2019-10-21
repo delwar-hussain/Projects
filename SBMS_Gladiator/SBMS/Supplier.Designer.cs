@@ -172,7 +172,7 @@
             this.supplierGridView.Margin = new System.Windows.Forms.Padding(2);
             this.supplierGridView.Name = "supplierGridView";
             this.supplierGridView.RowTemplate.Height = 33;
-            this.supplierGridView.Size = new System.Drawing.Size(683, 200);
+            this.supplierGridView.Size = new System.Drawing.Size(712, 184);
             this.supplierGridView.TabIndex = 7;
             this.supplierGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellClick);
             this.supplierGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.supplierGridView_CellContentClick);
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 441);
+            this.ClientSize = new System.Drawing.Size(772, 425);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.supplierGridView);
             this.Controls.Add(this.saveButton);
